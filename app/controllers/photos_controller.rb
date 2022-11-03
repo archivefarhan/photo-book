@@ -29,7 +29,7 @@ class PhotosController < ApplicationController
     render json: photo.as_json
   end
 
-  def delete
+  def destroy
     id = params["id"]
     photo = Photo.find(id)
 
